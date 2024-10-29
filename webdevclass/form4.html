@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details Form</title>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <h2 align="center">Job Details</h2>
+        <table id="table1" cellspacing="5px" cellpadding="5%" align="center">
+            <tr>
+                <td align="right" class="style1">Job Title:</td>
+                <td class="style1"><input type="text" name="JobTitle" /></td>
+                <td align="right">Description:</td>
+                <td><textarea rows="3" cols="15" name="Description">Brief Description (max 500 characters)</textarea></td>
+            </tr>
+
+            <tr>
+                <td align="right">Company Name:</td>
+                <td><input type="text" name="CompanyName" /></td>
+                <td align="right">Contact Number:</td>
+                <td><input type="text" name="ContactNumber" /></td>
+                <td align="right">Contact Person:</td>
+                <td><input type="text" name="ContactPerson" /></td>
+                <td align="right">Email:</td>
+                <td><input type="text" name="Email" /></td>
+            </tr>
+
+            <tr>
+                <td align="right">Work Status:</td>
+                <td><input type="checkbox" name="work_status" value="FullTime" />Full Time</td>
+                <td><input type="checkbox" name="work_status" value="PartTime" />Part Time</td>
+                <td><input type="checkbox" name="work_status" value="PerDiem" />Per Diem</td>
+                <td><input type="checkbox" name="work_status" value="Others" />Others</td>
+                <td align="right">Salary:</td>
+                <td><input type="text" name="Salary" /></td>
+                <td>
+                    <select name="currency">
+                        <option value="Rupees">Rupees</option>
+                        <option value="Euro">Euro</option>
+                        <option value="USD" selected="selected">US Dollar</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="salary_period">
+                        <option value="Yearly" selected="selected">Yearly</option>
+                        <option value="HalfYearly">Half Yearly</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">Experience (Years):</td>
+                <td><input type="text" name="Experience" /></td>
+                <td align="right">Location:</td>
+                <td><input type="text" name="Location" /></td>
+            </tr>
+
+            <tr>
+                <td align="right">Qualifications:</td>
+                <td>
+                    <select name="available_qualifications" size="4" id="Qualifications" multiple="multiple">
+                        <option value="Any">Any</option>
+                        <option value="HighSchool">High School</option>
+                        <option value="Associate">Associate</option>
+                        <option value="PreBachelors">Pre Bachelors</option>
+                        <option value="Bachelors">Bachelors</option>
+                    </select>
+                </td>
+                <td><input type="button" value="ADD >>" /></td>
+                <td><input type="button" value="<< Remove" /></td>
+                <td>
+                    <select name="selected_qualifications" id="SelectedQualifications" size="4" multiple="multiple">
+                        <option value="Any">Any</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="right">
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="Reset" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

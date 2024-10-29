@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <style>
+      th,
+      td {
+        width: fit-content; /* Distributes equal width among 5 columns (100% total width) */
+        text-align: center; /* Center-aligns the text */
+      }
+      body{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1" cellpadding="10" width="100%">
+      <tr>
+        <th></th>
+        <th>10:00 - 11:00</th>
+        <th>11:00 - 12:00</th>
+        <th>12:00 - 13:00</th>
+        <th>13:00 - 14:00</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td colspan="2">HTML</td>
+        <td colspan="2">CSS</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>HTML</td>
+        <td>Javascript</td>
+        <td colspan="2">CSS</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>Git</td>
+        <td colspan="2">HTML</td>
+        <td>Javascript</td>
+      </tr>
+    </table>
+    <hr />
+    <br /><br /><br /><br /><br />
+    <hr />
+    <h1>Team Performance</h1>
+    <table border="1">
+        <tr>
+        <th>Team</th>
+        <th colspan="2">Q1</th>
+        <th colspan="2">Q2</th>
+      </tr>
+      <tr>
+        <td>Member</td>
+        <td>Tasks Completed</td>
+        <td>Issues Resolved</td>
+        <td>Tasks Completed</td>
+        <td>Issues Resolved</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Team A</td> <!-- rowspan spans across two rows -->
+        <td>25</td>
+        <td>20</td>
+        <td>30</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>28</td>
+        <td>18</td>
+        <td>28</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Team B</td> <!-- rowspan spans across two rows -->
+        <td>22</td>
+        <td>18</td>
+        <td>28</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>15</td>
+        <td>25</td>
+        <td>16</td>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>20</td>
+        <td>30</td>
+        <td>22</td>
+      </tr>
+    </table>
+  </body>
+</html>
